@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<!--
+<suite name="Suite">
+	
+	
+	<parameter name="browser" value="edge"/>
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+	 <test thread-count="5" name="ParameterTest1">
+    <classes>
+      <class name="testNG.Parameterization"/>
+    </classes>
+  </test> 
+	
+	
+	<parameter name="browser" value="firefox"/>
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+	<test thread-count="5" name="ParameterTest2">
+    <classes>
+      <class name="testNG.Parameterization"/>
+    </classes>
+  </test> 
+	
+	
+</suite>  Suite 
+-->
+
+<suite name="Suite">
+ 	
+ 			
+ 	<test thread-count="4" name="EdgeTest">
+ 		<parameter name="browser" value= "edge" />
+ 
+ 		<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+ 		
+ 		<classes>
+ 			<class name="testNG.Parameterization" />
+ 		</classes>
+ 		</test>
+ 		
+ 		
+ 		
+ 	<test thread-count="4" name="FirefoxTest">
+ 		<parameter name="browser" value="firefox" />
+ 		<parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+ 		
+ 		<classes>
+ 			<class name="testNG.Parameterization" />
+ 		</classes>
+ 	</test>
+</suite>
+
